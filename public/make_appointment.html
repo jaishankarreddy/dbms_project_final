@@ -1,0 +1,109 @@
+<html>
+<head>
+	<title>Hospital management</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+	integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+	<link href="style.css" type="text/css" rel="stylesheet">
+</head>
+<body>
+	<div class="top">
+		<div style=" width: 100%; text-align: right;">
+			Contact Us +91 9986535860 | 1234@gmail.com
+		</div>
+	</div>
+	<div class="logo">
+		<div>
+			<table>
+				<tr class="navHeading">
+					<td width="600px" style="font-size:50px;font-family:forte;">
+						<font color="#428bca"> Hospital </font>
+						<font color="#000"> Management</font>
+					</td>
+					<td> <br> <br>
+						<font size="4px">
+							<a href="index.html">HOME</a>
+							<!-- <a href="add_patient.html">ADD PATIENT</a> -->
+							<a href="make_appointment.html">APPOINTMENT</a>
+							<a href="about.html">ABOUT US</a>
+							<a href="service.html">SERVICE</a>
+						</font>
+					</td>
+				</tr>
+			</table>
+		</div>
+	</div>
+	
+	<form class="row g-3 background-black-bg formSubmission" id="myForm"
+		style="width: 700px; margin:100px auto; margin-bottom: 200px;" action="/submit-form" method="POST">
+		<div class="col-md-6">
+			<label for="firstName" class="form-label">Patient First Name</label>
+			<input type="text" class="form-control" name="firstName" id="firstName">
+		</div>
+		<div class="col-md-6">
+			<label for="lastName" class="form-label">Patient Last Name</label>
+			<input type="text" class="form-control" name="lastName" id="lastName">
+		</div>
+		<div class="col-12">
+			<label for="email" class="form-label">Email</label>
+			<input type="email" class="form-control" name="email" id="email">
+		</div>
+		<div class="col-12">
+			<label for="address" class="form-label">Address</label>
+			<input type="text" class="form-control" name="address" id="address">
+		</div>
+		<div class="col-md-6">
+			<label for="age" class="form-label">Age</label>
+			<input type="number" class="form-control" name="age" id="age">
+		</div>
+		<div class="col-md-6">
+			<label for="number" class="form-label">Phone Number</label>
+			<input type="number" class="form-control" name="number" id="number">
+		</div>
+		<div class="col-md-6">
+			<label for="date" class="form-label">Appointment Date</label>
+			<input type="date" class="form-control" name="date" id="date">
+		</div>
+
+		<div class="col-12" style="display: flex; justify-content: center; align-items: center;">
+		<button type="submit" class="btn btn-primary" style="display: flex;" onclick="submitBtn()">Add Appointment</button>	
+		</div>
+	</form>
+    
+	<!-- <div id="formDataDisplay" style=" width:400px; margin: 50px auto; justify-content: center; align-items: center;">
+	</div> -->
+
+
+	<footer>
+		<div class="footer">
+			&copy; Hospital Management, site designed & developed by Team JDG
+		</div>
+	</footer>
+
+	<!-- <script>
+		function submitBtn() {
+	
+			// Get form values
+			const firstName = document.getElementById("firstName").value;
+			const lastName = document.getElementById("lastName").value;
+			const email = document.getElementById("inputEmail").value;
+			const address = document.getElementById("inputAddress").value;
+			const city = document.getElementById("age").value;
+			const phoneNumber = document.getElementById("phoneNumber").value;
+			const appointementDate = document.getElementById("date").value;
+			
+			document.getElementById("firstName").innerHTML = ""
+			document.getElementById("lastName").innerHTML = ""
+			document.getElementById("inputEmail").innerHTML = ""
+			document.getElementById("inputAddress").innerHTML = ""
+			document.getElementById("age").innerHTML = ""
+			document.getElementById("phoneNumber").innerHTML = ""
+			document.getElementById("date").innerHTML = ""
+			
+			
+			}
+	</script> -->
+	
+    
+</body>
+</head>
+</html>
